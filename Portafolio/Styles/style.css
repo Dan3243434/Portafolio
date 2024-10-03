@@ -1,0 +1,263 @@
+
+:root{
+    --naranja:#c06325;
+    --negro: #000;
+    --blanco: #ffffff;
+    --gris: #3b3a3ad0;
+    --azul: #2d2ad3c7 ;
+    --azul2: #121231fd ;
+    --azul3: #040429fd ;
+    --rojo: #da1a1afd ;
+    --amarillo: #f1e207f5 ;
+    --celeste: #1c9ab9;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+.brand samp{
+    color: var(--naranja);
+    font-size: 27px;
+    padding: 2px;
+
+}
+
+.brand{
+    color: var(--blanco);
+}
+
+.sobremi{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+    background-color: var(--blanco);
+    margin-top: 15em;
+
+
+}
+
+.sobremi img{
+    width: 26em;
+    margin-right: 9em;
+    grid-column: 1/5;
+    border: 4px solid var(--azul2);
+    border-radius: 200px;
+    margin-left: 50px;
+    margin-bottom: 10em;
+
+}
+
+.sobremi .info{
+    grid-column: 5/10;
+    padding: 3em;
+    margin-left: -8em;
+    margin-bottom: 11em;
+
+}
+
+.sobremi .info h2{
+    font-size: 3em;
+    color: var(--negro);
+}
+.sobremi .info samp{
+    color: var(--naranja);
+    font-size: 1.5em;
+}
+.divisor{
+    height: 4px;
+    width: 14em;
+  background-color: var(--azul2);
+  margin-bottom: 2em;
+}
+
+.div2{
+    height: 4px;
+    width: 28.2em;
+    background-color: var(--rojo);
+    margin-bottom: 25px;
+    margin-top: 10px;
+    background-color: var(--azul2);
+
+}
+
+.div3{
+    height: 4px;
+    width:70em;
+    margin-bottom: -2em;
+    margin-top: 12em;
+    margin-left: 4em;
+    background-color: var(--azul2);
+
+}
+
+.brand{
+  margin-top: -5px;  
+  margin-left: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between; 
+    padding: 23px; 
+    background-color: var(--azul2);
+    position: fixed;
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    width: 23em;
+    justify-content: space-around;    /* separa las opociones del menu */
+    margin-top: 2px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: var(--blanco);
+    text-decoration: none; /*quitar la linea de el textp */
+    padding: 10px 20px;
+
+}
+
+.menu a:hover{
+    background-color: var(--naranja);
+    border-radius: 20px;
+    transition: ease-in .4s;
+
+}
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,5fr); 
+    align-items: center;
+}
+h1{
+    font-size: 4em;
+    color: var(--negro);
+}
+
+.infocon p{
+    font-size: 21px;
+}
+
+.infocon{
+    margin-top: 100px;
+}
+
+.infocon span{
+    color: var(--naranja);
+}
+
+main img{
+    width: 300px;
+    border: 4px solid var(--azul2);
+    height: 520px;
+    border-radius: 200px;
+    margin-left: 150px;
+    margin-top: 100px;
+    
+
+}
+.info p{
+    font-size: 21px;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: var(--azul2);
+    color: var(--blanco);
+    padding: 7em;
+}
+
+.footer .footercon h3{
+    text-align: center;
+    padding: 8px;
+}
+
+.footer .footercon h4{
+    padding: 11px;
+}
+
+.footer .sotialn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 220px;
+    font-size: 2.5em;
+}
+
+
+
+.insta:hover{
+    color: var(--naranja);
+    transform: scale(1.20);
+    transition: ease-in .2s;
+    box-shadow: 0 0 25px var(--naranja);
+
+}
+
+.face:hover{
+    color: var(--naranja);
+    transform: scale(1.20);
+    transition: ease-in .2s;
+    box-shadow: 0px 0 25px var(--naranja);
+}
+
+.Whats:hover{
+    color: var(--naranja);
+    transform: scale(1.20);
+    transition: ease-in .2s;
+    box-shadow: 0 0 25px var(--naranja);
+}
+
+.sobremi .info .Progra{
+    color: var(--naranja);
+    transform: scale(1.20);
+    transition: ease-in .2s;
+}
+
+.sobremi .info .F{
+    color: var(--rojo);
+    transform: scale(1.20);
+    transition: ease-in .2s;
+}
+
+.sobremi .info .L{
+    color: var(--amarillo);
+    transform: scale(1.20);
+    transition: ease-in .2s;
+}
+
+.sobremi .info .C{
+    color: var(--celeste);
+    transform: scale(1.20);
+    transition: ease-in .2s;
+}
